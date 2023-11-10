@@ -1,0 +1,55 @@
+.app__service {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: #F8F8F8;
+}
+
+.app__service-web {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin: 0;
+    font-style: italic;
+}
+
+.app__service-heading {
+    align-items: center;
+}
+
+.app__service-heading h1 {
+    font-family: var(--font-family);
+    font-size: 30px;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.app__service-web div:hover {
+    color: #d42585;
+}
+
+@media screen and (max-width: 1050px) {
+    .app__service-web {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .app__service-heading h1 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .app__service-heading h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .app__service-heading h1 {
+        font-size: 16px;
+    }
+}

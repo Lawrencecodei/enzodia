@@ -1,0 +1,53 @@
+.app__cta-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .app__cta-btn button {
+    background: #ED2647;
+    color: #f8f8f8;
+    border-radius: 40px;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 30px;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    min-width: 150px;
+  }
+  
+  /* Media query for screens with a max-width of 768px (typical tablet screens) */
+  @media screen and (max-width: 768px) {
+    .app__cta-btn {
+      justify-content: center; /* Center the content horizontally */
+      align-items: center;
+      margin: 1rem auto; /* Center the container vertically and reset margins */
+    }
+  
+    .app__cta-btn button {
+      min-width: 120px; /* Reduce the minimum button width */
+      font-size: 14px; /* Slightly decrease font size for the button text */
+      padding: 0.4rem 0.8rem; /* Reduce padding to make the button more compact */
+    }
+  }
+  
+  /* Media query for screens with a max-width of 480px (typical mobile screens) */
+  @media screen and (max-width: 480px) {
+    .app__cta-btn {
+      flex-direction: column; /* Stack the button below the content */
+      margin: 1rem auto; /* Center the container vertically and reset margins */
+    }
+  
+    .app__cta-btn button {
+      min-width: 150px; /* Restore the minimum button width */
+      font-size: 16px; /* Slightly increase font size for the button text */
+      padding: 0.5rem 1rem; /* Restore the button padding */
+    }
+  }
+  
+

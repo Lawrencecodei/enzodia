@@ -1,0 +1,62 @@
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  color: black;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  /* background-color: #0077B5; Change the background color as needed */
+  color: black;
+  border-radius: 50%;
+  margin: 0 20px;
+  text-decoration: none;
+  font-size: 40px;
+  transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: gray; /* Change the background color for the hover state */
+}
+
+@media screen and (max-width: 1050px) {
+  .social-icons {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 0.5rem;
+      padding: 0;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .social-icons {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 0.5rem;
+  }
+
+  .social-icons a {
+      width: 20px;
+      height: 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .social-icons {
+      display: flex;
+      flex-direction: column;
+    
+  }
+
+  .social-icons a {
+      width: 20px;
+      height: 20px;
+      padding: 0;
+  }
+}

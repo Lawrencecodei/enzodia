@@ -1,0 +1,51 @@
+.app__privacy {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0eded;
+}
+
+.app__privacy h1 {
+    font-family: var(--font-family);
+    text-align: center;
+}
+
+.app__privacy h4 {
+    font-family: var(--font-alt);
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.app__privacy p {
+    font-family: var(--font-alt);
+    font-size: 15px;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .app__privacy h4 {
+        font-size: 16px;
+        line-height: 36px;
+    }
+
+    .app__privacy p {
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .app__privacy h1 {
+        font-size: 24px;
+    }
+
+    .app__privacy h4 {
+        font-size: 14px;
+        line-height: 32px;
+    }
+
+    .app__privacy p {
+        font-size: 12px;
+        line-height: 24px;
+    }
+}

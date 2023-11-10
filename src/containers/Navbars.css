@@ -1,0 +1,144 @@
+.app__navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FBFBFB;
+  padding: 1rem 6rem;
+}
+
+.app__brandname {
+  font-family: var(--font-alt);
+  color: #333333;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  line-height: 28px;
+  font-size: 18px;
+}
+
+.app__brandname img {
+  width: 90px;
+  height: 50px;
+}
+
+.app__brandname:hover {
+  color: gray;
+}
+
+.app__navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.app__brandname span {
+  color: #ED2647;
+}
+
+.app__navbar-links ul {
+  list-style: none;
+  display: flex;
+  position: relative;
+}
+
+.app__navbar-links li {
+  margin: 0 1rem;
+  cursor: pointer;
+  color: #333333;
+  position: relative;
+}
+
+.app__navbar-links li:hover {
+  color: gray;
+}
+
+.hamburger {
+  border: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.4rem;
+  border-radius: 50%;
+  color: #FFFFFF;
+  position: relative;
+  top: 18px;
+  left: 5px;
+  transform: translateY(-50%);
+  display: block;
+  background-color: #ED2647;
+}
+
+.hamburger:hover {
+  color: gray;
+}
+
+.app__navbar-smallscreen {
+  display: none;
+}
+
+.app__navbar-smallscreen_overlay {
+  position: fixed;
+  top: 0;
+  left: 60%;
+  width: 30%;
+  height: 41vh;
+  background: #F8F8F8;
+  transition: 0.5s ease;
+  flex-direction: column;
+  z-index: 5;
+}
+
+.app__navbar-smallscreen_overlay .overlay__close {
+  font-size: 17px;
+  color: #333333;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  padding: 0.1rem;
+  position: absolute; /* Change 'center' to 'absolute' */
+  top: 20px;
+  right: 20px;
+}
+
+.app__navbar-smallscreen_links {
+  list-style: none;
+}
+
+.app__navbar-smallscreen_links li {
+  margin: 1rem;
+  color: #333333;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: var(--font-family);
+}
+
+.app__navbar-smallscreen_links li:hover {
+  color: gray;
+}
+
+/* Improve existing media queries and add new ones */
+@media screen and (max-width: 1150px) {
+  .app__navbar-links {
+    display: none;
+  }
+
+  .app__navbar-smallscreen {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__navbar {
+    padding: 1.5rem; /* Adjust padding for smaller screens */
+  }
+
+  .app__navbar-smallscreen_overlay {
+    width: 80%; /* Make the overlay wider on smaller screens */
+    left: 10%; /* Center the overlay horizontally */
+  }
+}
+
+
+

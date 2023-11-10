@@ -1,0 +1,136 @@
+.app__contact-form {
+  display: flex;
+  background-color: #e5e3e3;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.app__contact-form span {
+  color: #ED2647;
+}
+
+.contact__form-container {
+  max-width: 100%;
+  padding: 35px;
+  background-color: #fcf9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact__form-container h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: var(--font-family);
+}
+
+.contact__form-container p {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: var(--font-family);
+  color: black;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 200px;
+  /* resize: none; */
+  font-size: 20px;
+}
+
+button {
+  background-color: #ED2647;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #d42585;
+}
+
+.contact__form-image {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10.5rem;
+}
+
+.contact__form-image img {
+  width: 470px;
+  margin: 0 0 1rem;
+}
+
+.contact-form_text {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  width: 130px;
+  margin-right: 0;
+  padding-left: 0;
+}
+
+.contact__form-socialIcons-text {
+  font-size: 18px;
+  font-family: var(--font-alt);
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 1050px) {
+  .app__contact-form {
+      flex-direction: column;
+  }
+
+  .contact__form-image img {
+      width: 350px;
+      margin: 0 0 1rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .app__contact-form {
+      flex-direction: column;
+  }
+
+  .contact__form-image img {
+      width: 300px;
+      margin: 0 0 1rem;
+  }
+
+  .contact__form-socialIcons-text {
+      font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .app__contact-form {
+      flex-direction: column;
+  }
+
+  .contact__form-image img {
+      width: 250px;
+      margin: 0 0 1rem;
+  }
+
+  .contact__form-socialIcons-text {
+      font-size: 14px;
+  }
+}

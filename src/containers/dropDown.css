@@ -1,0 +1,50 @@
+.app__dropdown {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  
+  .app__dropdown h1 {
+    font-family: var(--font-family);
+    color: #333333;
+    line-height: 60px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 100;
+  }
+  
+  .app__dropdown p {
+    font-family: var(--font-alt);
+    color: #333333;
+    line-height: 35px;
+    font-size: 18px;
+  }
+  
+  /* Media query for screens with a max-width of 768px (typical tablet screens) */
+  @media screen and (max-width: 768px) {
+    .app__dropdown h1 {
+      font-size: 24px; /* Adjust font size for h1 on smaller screens */
+      line-height: 50px;
+    }
+  
+    .app__dropdown p {
+      font-size: 16px; /* Adjust font size for p on smaller screens */
+      line-height: 30px;
+    }
+  }
+  
+  /* Media query for screens with a max-width of 480px (typical mobile screens) */
+  @media screen and (max-width: 480px) {
+    .app__dropdown h1 {
+      font-size: 20px; /* Further adjust font size for h1 on smaller screens */
+      line-height: 40px;
+    }
+  
+    .app__dropdown p {
+      font-size: 14px; /* Further adjust font size for p on smaller screens */
+      line-height: 25px;
+    }
+  }
+  
+
